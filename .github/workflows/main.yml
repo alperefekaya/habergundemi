@@ -18,8 +18,7 @@ jobs:
           python-python-version: '3.9'
 
       - name: Kütüphaneleri Yukle
-        run: pip install feedparser
-
+        run: pip install feedparser openai==0.28
       - name: Botu Calistir
         run: python bot.py
 
