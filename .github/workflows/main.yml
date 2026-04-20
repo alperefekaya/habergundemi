@@ -15,7 +15,7 @@ jobs:
       - name: Python Kur
         uses: actions/setup-python@v4
         with:
-          python-python-version: '3.9'
+          python-: '3.9'
 
       - name: Kütüphaneleri Yukle
         run: pip install feedparser openai==0.28
