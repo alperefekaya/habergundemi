@@ -7,43 +7,121 @@
         <title>Haber Gündemi - Son Dakika</title>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
         <style>
-            body { font-family: 'Inter', sans-serif; background-color: #f0f2f5; margin: 0; padding: 0; color: #1c1e21; }
-            header { background-color: #e74c3c; color: white; padding: 30px 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-            .container { max-width: 1200px; margin: 30px auto; padding: 0 15px; }
-            .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; }
-            .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s; display: flex; flex-direction: column; border: 1px solid #ddd; }
-            .card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.12); }
-            .card-image-container { position: relative; width: 100%; height: 200px; background: #dfe3e8; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-            .card-image { width: 100%; height: 100%; object-fit: cover; }
-            .no-image-text { color: #888; font-weight: bold; font-size: 14px; text-transform: uppercase; }
-            .card-content { padding: 20px; flex-grow: 1; }
-            h1 { margin: 0; font-size: 32px; letter-spacing: -1px; }
-            h2 { font-size: 19px; color: #1c1e21; margin: 0 0 12px 0; line-height: 1.4; font-weight: 700; }
-            p { font-size: 15px; line-height: 1.6; color: #4b4f56; margin: 0; }
-            .badge { background: #e74c3c; color: white; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 700; position: absolute; top: 15px; left: 15px; z-index: 10; }
-            .footer { text-align: center; padding: 40px; color: #606770; font-size: 14px; border-top: 1px solid #ddd; background: white; margin-top: 50px; }
-            .nav-links { margin-top: 15px; }
-            .nav-links a { color: rgba(255,255,255,0.9); text-decoration: none; margin: 0 12px; font-weight: 400; font-size: 14px; border-bottom: 1px solid transparent; }
-            .nav-links a:hover { border-bottom: 1px solid white; }
+            body { font-family: 'Inter', sans-serif; background-color: #f4f7f6; margin: 0; padding: 0; color: #333; }
+            header { background-color: #e74c3c; color: white; padding: 25px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            .container { max-width: 1100px; margin: 20px auto; padding: 15px; }
+            .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+            .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
+            .card-img { width: 100%; height: 180px; object-fit: cover; background: #ddd; border-bottom: 1px solid #eee; }
+            .card-body { padding: 20px; }
+            h1 { margin: 0; font-size: 26px; }
+            h2 { font-size: 18px; margin: 0 0 10px 0; color: #2c3e50; line-height: 1.4; }
+            p { font-size: 14px; color: #7f8c8d; line-height: 1.6; margin: 0; }
+            .nav { margin-top: 10px; }
+            .nav a { color: white; text-decoration: none; margin: 0 10px; font-size: 13px; opacity: 0.9; }
         </style>
     </head>
     <body>
         <header>
             <h1>HABER GÜNDEMİ</h1>
-            <div class="nav-links">
-                <a href="/">Anasayfa</a>
-                <a href="/hakkimizda.html">Hakkımızda</a>
-                <a href="/gizlilik.html">Gizlilik Politikası</a>
-            </div>
+            <div class="nav"><a href="/hakkimizda.html">Hakkımızda</a> | <a href="/gizlilik.html">Gizlilik</a></div>
         </header>
         <div class="container">
             <div class="news-grid">
     
-            </div>
-        </div>
-        <div class="footer">
-            <p>&copy; 2026 Haber Gündemi. Yapay zeka ile otomatik güncellenmektedir.</p>
-        </div>
-    </body>
-    </html>
-    
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x225.png?text=Haber+Gündemi" class="card-img" alt="Haber">
+                    <div class="card-body">
+                        <h2>Yeni Zelanda Genel Valisi Kiro, Türkiye'ye ziyarette bulunacak</h2>
+                        <p>Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Yeni Zelanda Genel Valisi Dame Cindy Kiro'nun Çanakkale Kara Muharebelerinin 111. Yıl Dönümü ve ANZAK Günü Anma Törenleri dolayısıyla Türkiye'yi zi...</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x225.png?text=Haber+Gündemi" class="card-img" alt="Haber">
+                    <div class="card-body">
+                        <h2>Kerkük valisi Seman Ağa görevine resmen başladı</h2>
+                        <p>Irak Cumhurbaşkanı Nizar Amedi, Kerkük vilayeti valiliği görevine seçilen Irak Türkmen Cephesi (ITC) Başkanı Muhammed Seman Ağa’ya Kerkük valiliği atama kararnamesini teslim etti....</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x225.png?text=Haber+Gündemi" class="card-img" alt="Haber">
+                    <div class="card-body">
+                        <h2>BM: İsrailli işgalciler, Filistinlilere cinsel içerikli taciz, saldırı ve yıldırma politikası uyguladı</h2>
+                        <p>Birleşmiş Milletler (BM), İsrailli işgalcilerin Batı Şeria'da Filistinlilere "cinsel içerikli taciz, saldırı ve yıldırma" yöntemlerine başvurduğunu ortaya koyan raporu paylaştı....</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x225.png?text=Haber+Gündemi" class="card-img" alt="Haber">
+                    <div class="card-body">
+                        <h2>Fed başkanlığı için aday gösterilen Warsh'dan "bağımsızlık" vurgusu</h2>
+                        <p>ABD Başkanı Donald Trump tarafından ABD Merkez Bankası (Fed) başkanlığı için aday gösterilen Kevin Warsh, para politikasının bağımsızlığının korunmasında kararlı olduğunu belirtti....</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x225.png?text=Haber+Gündemi" class="card-img" alt="Haber">
+                    <div class="card-body">
+                        <h2>Kahramanmaraş Cumhuriyet Başsavcılığından okuldaki silahlı saldırıya ilişkin açıklama</h2>
+                        <p>Kahramanmaraş Cumhuriyet Başsavcılığı, Ayser Çalık Ortaokulu'nda 15 Nisan'da meydana gelen silahlı saldırının ardından, "failin ölmediği ve yaralı şekilde olay yerinden kaçırıldığına" ilişkin iddialar...</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x225.png?text=Haber+Gündemi" class="card-img" alt="Haber">
+                    <div class="card-body">
+                        <h2>BM: Lübnan'da 2 Mart'tan bu yana en az 227 çocuk hayatını kaybetti</h2>
+                        <p>Birleşmiş Milletler (BM), Lübnan'da İsrail'in saldırılarının başladığı 2 Mart'tan bu yana "en az 227 çocuğun" hayatını kaybettiğini, 700'den fazlasının da yaralandığını bildirdi....</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x225.png?text=Haber+Gündemi" class="card-img" alt="Haber">
+                    <div class="card-body">
+                        <h2>Deniz Kuvvetlerinin milli uçak gemisi gelecek yıl mavi sularla buluşmaya hazırlanıyor</h2>
+                        <p>Deniz Kuvvetleri Komutanı Oramiral Ercüment Tatlıoğlu,  "Şu anda milli uçak gemimizi yapıyoruz. Milli uçak gemimizin inşa süreci çok iyi gidiyor. " dedi....</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x225.png?text=Haber+Gündemi" class="card-img" alt="Haber">
+                    <div class="card-body">
+                        <h2>Trendyol Süper Lig'de görünüm</h2>
+                        <p>Şampiyonluk yolundaki rakipleri Fenerbahçe ve Trabzonspor'un puan kaybettiği haftayı 3 puanla kapatan Galatasaray, kalan 4 haftaya avantajlı girdi....</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x225.png?text=Haber+Gündemi" class="card-img" alt="Haber">
+                    <div class="card-body">
+                        <h2>Gaziantep FK sahasından 3 puanla ayrıldı</h2>
+                        <p>Trendyol Süper Lig'in 30. hafta kapanış mücadelesinde Gaziantep FK, konuk ettiği Zecorner Kayserispor'u 3-0 mağlup etti.....</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x225.png?text=Haber+Gündemi" class="card-img" alt="Haber">
+                    <div class="card-body">
+                        <h2>İsrail'in bıraktığı mühimmatla yaralanan Gazzeli Avde, bütün çocukluğunu kaybettiğini söyledi</h2>
+                        <p>İsrail’in Gazze'ye yönelik saldırılarından geriye kalan patlamamış mühimmatın infilak etmesi sonucu ağır yaralanarak, görme yetisini ve sol elinin parmaklarını kaybeden Filistinli çocuk Muhammed Avde,...</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x225.png?text=Haber+Gündemi" class="card-img" alt="Haber">
+                    <div class="card-body">
+                        <h2>HSK Kararnamesiyle 14 hakim ve savcının görev yeri değişti</h2>
+                        <p>Hakimler ve Savcılar Kurulunca (HSK), 14 hakim ve savcının görev yeri değiştirildi....</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x225.png?text=Haber+Gündemi" class="card-img" alt="Haber">
+                    <div class="card-body">
+                        <h2>Rıza Kayaalp, Avrupa Güreş Şampiyonası'nda finale yükseldi</h2>
+                        <p>Arnavutluk'ta düzenlenen 2026 Avrupa Güreş Şampiyonası'nın ilk gününde milli sporcu Rıza Kayaalp, grekoromen stil 130 kiloda finale çıktı....</p>
+                    </div>
+                </div>
+        </div></div></body></html>
