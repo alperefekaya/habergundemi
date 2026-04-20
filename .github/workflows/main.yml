@@ -1,0 +1,32 @@
+name: Haber Botu Calistir
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Her saat başı çalışır
+  workflow_dispatch: # İstediğinde manuel çalıştırmak için
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu Kontrol Et
+        uses: actions/checkout@v3
+
+      - name: Python Kur
+        uses: actions/setup-python@v4
+        with:
+          python-python-version: '3.9'
+
+      - name: Kütüphaneleri Yukle
+        run: pip install feedparser
+
+      - name: Botu Calistir
+        run: python bot.py
+
+      - name: Degisiklikleri Kaydet ve Yukle
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add index.html
+          git commit -m "Haberler guncellendi" || exit 0
+          git push
